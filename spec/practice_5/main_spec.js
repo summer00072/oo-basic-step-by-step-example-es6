@@ -26,7 +26,7 @@ describe("Person", () => {
             const student = new Student("Tom", 21, 2);
             expect(student.name).to.equal("Tom");
             expect(student.age).to.equal(21);
-            expect(student.klass).to.equal(2);
+            expect(student.class).to.equal(2);
         });
 
         it("should overwrite Person introduce, introduce with name, age and class number", () => {
@@ -46,7 +46,7 @@ describe("Person", () => {
         it("should overwrite Person introduce, introduce with name and age, but different with Person introduce", () => {
             const worker = new Worker("Tom", 21);
             const introduce = worker.introduce();
-            expect(introduce).to.equal("My name is Tom. I am 21 years old. I am a Teacher. I have a job.");
+            expect(introduce).to.equal("My name is Tom. I am 21 years old. I am a Worker. I have a job.");
         });
     });
 });
